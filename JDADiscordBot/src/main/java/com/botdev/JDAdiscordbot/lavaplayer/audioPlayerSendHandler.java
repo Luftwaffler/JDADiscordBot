@@ -1,4 +1,4 @@
-package com.botdev.JDAdiscordbot.lavaplayer;
+package com.botdev.JDAdiscordbot.music.lavaplayer;
 
 import com.sedmelluq.discord.lavaplayer.format.StandardAudioDataFormats;
 import com.sedmelluq.discord.lavaplayer.player.AudioPlayer;

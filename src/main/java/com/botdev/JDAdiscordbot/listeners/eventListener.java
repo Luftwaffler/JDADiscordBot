@@ -4,6 +4,7 @@ import net.dv8tion.jda.api.OnlineStatus;
 import net.dv8tion.jda.api.entities.Member;
 import net.dv8tion.jda.api.entities.User;
 import net.dv8tion.jda.api.events.guild.member.GuildMemberJoinEvent;
+import net.dv8tion.jda.api.events.message.MessageReceivedEvent;
 import net.dv8tion.jda.api.events.message.react.MessageReactionAddEvent;
 import net.dv8tion.jda.api.events.user.update.UserUpdateOnlineStatusEvent;
 import net.dv8tion.jda.api.hooks.ListenerAdapter;
@@ -30,7 +31,18 @@ public class eventListener extends ListenerAdapter {
         System.out.println(avurl);
     }
 
-//    bad for memory usage when bot deals with large amounts of users
+    @Override
+    public void onMessageReceived(@NotNull MessageReceivedEvent event) {
+        String message = event.getMessage().getContentDisplay();
+        String messageId = event.getMessageId();
+        System.out.println(message);
+        if(message.toLowerCase().equals("bad word")){
+            event.getChannel().deleteMessageById(messageId).queue();
+        }
+    }
+
+    //    bad for memory usage when bot deals with large amounts of users
+    /*
     public void onUserUpdateOnlineStatus(@NotNull UserUpdateOnlineStatusEvent event){
         List<Member> members = event.getGuild().getMembers();
         int onlineMembers = 0;
@@ -43,4 +55,5 @@ public class eventListener extends ListenerAdapter {
         String message = user.getAsTag() + " has updated their online status to " + event.getNewOnlineStatus().getKey() + "!" + " There are now " + onlineMembers + " online members!";
         event.getGuild().getDefaultChannel().asStandardGuildMessageChannel().sendMessage(message).queue();
     }
+    */
 }

@@ -1,7 +1,7 @@
 package com.botdev.JDAdiscordbot;
 import com.botdev.JDAdiscordbot.commands.commandManager;
 import com.botdev.JDAdiscordbot.listeners.eventListener;
-import com.botdev.JDAdiscordbot.musicCmds.CmdPlay;
+import com.botdev.JDAdiscordbot.commands.musicCmds.CmdPlay;
 import io.github.cdimascio.dotenv.Dotenv;
 import net.dv8tion.jda.api.OnlineStatus;
 import net.dv8tion.jda.api.entities.Activity;

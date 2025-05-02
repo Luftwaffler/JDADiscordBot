@@ -1,7 +1,7 @@
-package com.botdev.JDAdiscordbot.musicCmds;
+package com.botdev.JDAdiscordbot.commands.musicCmds;
 
-import com.botdev.JDAdiscordbot.lavaplayer.GuildMusicManager;
-import com.botdev.JDAdiscordbot.lavaplayer.PlayerManager;
+import com.botdev.JDAdiscordbot.music.lavaplayer.GuildMusicManager;
+import com.botdev.JDAdiscordbot.music.lavaplayer.PlayerManager;
 import com.sedmelluq.discord.lavaplayer.player.AudioPlayer;
 import net.dv8tion.jda.api.entities.GuildVoiceState;
 import net.dv8tion.jda.api.entities.Member;

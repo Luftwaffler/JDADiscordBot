@@ -1,6 +1,6 @@
-package com.botdev.JDAdiscordbot.lavaplayer;
+package com.botdev.JDAdiscordbot.music.lavaplayer;
 
-import com.botdev.JDAdiscordbot.musicCmds.CmdPlay;
+import com.botdev.JDAdiscordbot.commands.musicCmds.CmdPlay;
 import com.sedmelluq.discord.lavaplayer.player.*;
 import com.sedmelluq.discord.lavaplayer.tools.GarbageCollectionMonitor;
 import com.sun.management.GarbageCollectorMXBean;

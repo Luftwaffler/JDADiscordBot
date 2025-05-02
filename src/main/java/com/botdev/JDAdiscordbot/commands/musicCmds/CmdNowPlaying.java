@@ -1,6 +1,6 @@
-package com.botdev.JDAdiscordbot.musicCmds;
-import com.botdev.JDAdiscordbot.lavaplayer.GuildMusicManager;
-import com.botdev.JDAdiscordbot.lavaplayer.PlayerManager;
+package com.botdev.JDAdiscordbot.commands.musicCmds;
+import com.botdev.JDAdiscordbot.music.lavaplayer.GuildMusicManager;
+import com.botdev.JDAdiscordbot.music.lavaplayer.PlayerManager;
 import com.sedmelluq.discord.lavaplayer.player.AudioPlayer;
 import com.sedmelluq.discord.lavaplayer.track.AudioTrack;
 import com.sedmelluq.discord.lavaplayer.track.AudioTrackInfo;
